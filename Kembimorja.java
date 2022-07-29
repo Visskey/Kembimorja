@@ -97,6 +97,23 @@ public class Kembimorja
                 System.out.println(shuma + " Euro = " + f.format(swissfranc) + " Swiss Franc");
                 break;
                 
+            case 5:  // Yen 
+                albanianlek = shuma * 0.85;
+                System.out.println(shuma + " Yen = " + f.format(albanianlek) + " Albanian Lek");
+
+                dollar = shuma * 0.0074;
+                System.out.println(shuma + " Yen = " + f.format(dollar) + " US Dollars");
+
+                pound = shuma * 0.0062;
+                System.out.println(shuma + " Yen = " + f.format(pound) + " Pound");
+
+                euro = shuma * 0.0073;
+                System.out.println(shuma + " Yen = " + f.format(euro) + " Euro");
+
+                swissfranc = shuma *0.0071;
+                System.out.println(shuma + " Yen = " + f.format(swissfranc) + " Swiss Franc");
+                break;
+                
                 default:
                 System.out.println("Invalid Input");
         }
