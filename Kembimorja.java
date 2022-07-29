@@ -26,5 +26,28 @@ public class Kembimorja
 
         System.out.println("Shtypeni shumen qe deshironi te konvertoni: ");
         shuma = sc.nextFloat();
+        
+        switch (zgjidhja)
+        {
+            case 1:  // Albanian Lek
+                dollar = shuma * 0.0088;
+                System.out.println(shuma + " Albanian Lek = " + f.format(dollar) + " US Dollar");
+
+                pound = shuma * 0.0073;
+                System.out.println(shuma + " Albanian Lek = " + f.format(pound) + " Pound");
+
+                euro = shuma * 0.0086;
+                System.out.println(shuma + " Albanian Lek = " + f.format(euro) + " Euro");
+
+                yen = shuma * 1.18;
+                System.out.println(shuma + " Albanian Lek = " + f.format(yen) + " Yen");
+
+                swissfranc = shuma * 0.0084;
+                System.out.println(shuma + " Albanian Lek = " + f.format(swissfranc) + " Swiss Franc");
+                break;
+                
+                default:
+                System.out.println("Invalid Input");
+        }
     }
 }
